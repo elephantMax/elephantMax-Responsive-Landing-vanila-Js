@@ -4,18 +4,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title></title>
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
 <body>
     <header class="header container">
         <div class="header-links">
-            <a href="#" class="header-link active">Home</a>
-            <a href="#" class="header-link">About me</a>
-            <a href="#" class="header-link">Skills</a>
-            <a href="#" class="header-link">Portfolio</a>
-            <a href="#" class="header-link">Contacts</a>
+            <a href="#" class="header-link active" data-target="home">Home</a>
+            <a href="#" class="header-link" data-target="about">About me</a>
+            <a href="#" class="header-link" data-target="skills">Skills</a>
+            <a href="#" class="header-link" data-target="portfolio">Portfolio</a>
+            <a href="#" class="header-link" data-target="contacts">Contacts</a>
             <p class="text-lang text-lang-mobile">RU <strong>| ENG</strong></p>
         </div>
         <div class="header-content">
@@ -34,7 +34,7 @@
 
     </header>
 
-    <section class="section section-secondary">
+    <section class="section section-secondary" data-section="about">
         <div class="container">
             <h1 class="section__title">About me</h1>
             <div class="section-secondary__texts">
@@ -48,7 +48,7 @@
         </div>
     </section>
 
-    <section class="section section-skills">
+    <section class="section section-skills" data-section="skills">
         <div class="container">
             <h1 class="section__title">Skills</h1>
             <p class="section__text section-skills__text">I work in such programs as</p>
@@ -101,7 +101,7 @@
         </div>
     </section>
 
-    <section class="section section-secondary">
+    <section class="section section-secondary" data-section="portfolio">
         <div class="container">
             <h1 class="section__title">Portfolio</h1>
             <div class="projects">
@@ -124,7 +124,7 @@
         </div>
     </section>
 
-    <section class="section section-contact">
+    <section class="section section-contact" data-section="contacts">
         <div class="container">
             <div class="section__body">
                 <h1 class="section__title">Contacts</h1>
